@@ -4,7 +4,7 @@
  * tiny wrapper.
  * */
 
-#include <MediaInfoDLL/MediaInfoDLL.h>
+#include "MediaInfoDLL.h"
 
 void mediainfo_c_init()
 {
