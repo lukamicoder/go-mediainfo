@@ -27,9 +27,9 @@ void *mediainfo_c_open(char *filename)
     return handle;
 }
 
-char *mediainfo_c_get(void *opaque, char *key, enum MediaInfo_stream_t type)
+char *mediainfo_c_get(void *opaque, short count, char *key, enum MediaInfo_stream_t type)
 {
-    return (char *) MediaInfo_Get(opaque, type, 0, key, MediaInfo_Info_Text,
+    return (char *) MediaInfo_Get(opaque, type, count, key, MediaInfo_Info_Text,
                                   MediaInfo_Info_Name);
 }
 
